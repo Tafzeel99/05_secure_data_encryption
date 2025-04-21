@@ -6,20 +6,30 @@ This is a **Streamlit-based web app** that allows users to securely **encrypt an
 
 ## 🧠 Features
 
-- Encrypt and store any text securely
-- Retrieve encrypted data using a unique ID and passkey
-- Login mechanism after multiple failed attempts
-- AES-level security using `cryptography.fernet`
-- Smooth navigation between pages via sidebar
-- Reauthorization lock after 3 wrong passkey attempts
+- **Secure Data Storage**: Encrypt and store any text securely.
+- **Data Retrieval**: Retrieve encrypted data using a unique passkey.
+- **User Authentication**: 
+  - Register and log in with a username and password.
+  - Lockout mechanism after multiple failed login attempts.
+- **Encryption**: AES-level security using `cryptography.fernet`.
+- **Smooth Navigation**: Intuitive navigation between pages via the sidebar.
+- **Reauthorization Lock**: Lockout after 3 wrong passkey attempts during decryption.
 
 ---
 
 ## 📦 Technologies Used
 
-- Python
-- [Streamlit](https://streamlit.io/)
-- Cryptography (Fernet)
-- Hashlib
-- Base64
+- **Python**: Core programming language.
+- **[Streamlit](https://streamlit.io/)**: For building the web interface.
+- **Cryptography (Fernet)**: For encryption and decryption.
+- **Hashlib**: For secure password hashing.
+- **Base64**: For encoding keys.
 
+---
+
+## 🚀 How to Run the App
+
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
