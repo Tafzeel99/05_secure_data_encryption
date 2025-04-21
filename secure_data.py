@@ -69,11 +69,17 @@ choice = st.sidebar.selectbox("Select an option", menu)
 if choice == "Home":
     st.subheader("Welcome to the 🔐 Secure Data Encryption App")
 # description of app
-    st.write("This app allows you to securely store and retrieve sensitive information using encryption.")
-    st.write("You can register, log in, and manage your secure data.")
-    st.write("All data is encrypted with a password of your choice.")
-    st.write("Please choose an option from the sidebar to get started.")
-    st.write("🔒 Your data is safe and secure!")
+    st.write("""
+    - This app allows you to securely store and retrieve sensitive information using encryption.
+    - Features:
+        - Register a new user.
+        - Log in with your credentials.
+        - Manage your secure data.
+    - All data is encrypted with a password of your choice.
+    - Instructions:
+        - Choose an option from the sidebar to get started.
+        - Your data is safe and secure!
+    """)
              
 
 # --- Register new user page
@@ -96,7 +102,8 @@ elif choice == "Register":
         else:
             st.warning("⚠️ Please enter both username and password.")
     
-    elif choice == "Login":
+# --- Login page
+elif choice == "Login":
         st.subheader("🔑 User Login")
         
         if time.time() < st.session_state.lockout_time:
